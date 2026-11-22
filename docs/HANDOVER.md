@@ -93,7 +93,7 @@ gamejam-<西暦>-<spring|summer|autumn|winter>-<チーム記号>
 
 | サービス | 用途 | 名義 | 備考 |
 |---|---|---|---|
-| unityroom | ゲームの Web 公開 | （サークル共用アカウント or 各自） | 決まったら記入 |
+| unityroom | ゲームの Web 公開 | サークル共用アカウント（[nu-multimedia-lab](https://unityroom.com/users/nu-multimedia-lab)） | Google アカウントでログイン。どの Google アカウントかは記入 |
 | （共用 Gmail） | 各サービスの登録用 | サークル | 作成したら記入 |
 | Unity（自動ビルド用） | GitHub Actions でのビルド | （決まったら記入） | org の Secrets に登録。名義人が卒業するときは登録し直す |
 
