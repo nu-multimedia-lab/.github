@@ -55,19 +55,25 @@ git push origin v1.0.0
 
 進み具合はリポジトリの「Actions」タブで見られます。終わると Releases に `リポジトリ名_v1.0.0_StandaloneWindows64.zip` と `…_WebGL.zip` が並びます。WebGL の zip は展開して unityroom にアップロードします（3 章）。
 
-#### 最初に一度だけ：Unity ライセンスの登録（Owner の作業）
+#### 自動ビルドを使う前に：Unity ライセンスの登録（Owner の作業）
 
-自動ビルドには Unity のライセンスが要ります。org の Secrets に一度登録すれば、全リポジトリで使えます。
+自動ビルドには Unity のライセンスが要ります。GitHub の無料プランでは org 全体の Secrets を private リポジトリから使えないので、ライセンスは自動ビルドを使うリポジトリごとに登録します。パスワードを広めないよう、登録は Owner の作業とし、チームリーダーは自動ビルドを使いたいときに Owner に頼んでください。
+
+最初に一度だけ、名義人がライセンスファイルを用意します。
 
 1. 名義にする人が Unity Hub にログインし、Preferences → Licenses →「Add」→「Get a free personal license」でライセンスを追加する
 2. ライセンスファイル `Unity_lic.ulf` を探す（隠しフォルダにある）
    - Windows：`C:\ProgramData\Unity\Unity_lic.ulf`
    - Mac：`/Library/Application Support/Unity/Unity_lic.ulf`
-3. org の Settings → Secrets and variables → Actions →「New organization secret」で次の 3 つを登録する（Repository access は All repositories か Private repositories）
+3. ファイルを取り出したら Unity Hub からサインアウトする
+
+リポジトリごとに、Owner が次の作業をします。
+
+1. リポジトリの Settings → Secrets and variables → Actions →「New repository secret」を開く
+2. 次の 3 つを登録する
    - `UNITY_LICENSE`：`.ulf` ファイルの中身をそのまま貼る
    - `UNITY_EMAIL`：その Unity アカウントのメールアドレス
    - `UNITY_PASSWORD`：その Unity アカウントのパスワード
-4. 登録したら Unity Hub からサインアウトする
 
 名義人を [引き継ぎ書](HANDOVER.md#4-外部アカウント) に書いておき、卒業するときは後任の名義で登録し直します。
 
@@ -151,7 +157,7 @@ gh release create v1.0.0 MyGame_v1.0.0_Windows.zip \
 3. WebGL アップロード画面で、ビルドで出力されたファイルを、拡張子を間違えずにアップロード
 4. 自分でプレイして動作確認 → 一般公開
 
-> アカウントをサークル共用にするか各自にするかは [引き継ぎ書](HANDOVER.md#4-外部アカウント) を確認。
+> サークル共用アカウント（[nu-multimedia-lab](https://unityroom.com/users/nu-multimedia-lab)）で投稿するか、自分のアカウントで投稿して共用アカウントを「共同制作」に追加します。共用アカウントの情報は [引き継ぎ書](HANDOVER.md#4-外部アカウント) を参照。
 
 ---
 

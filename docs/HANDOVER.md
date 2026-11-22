@@ -44,7 +44,7 @@ People → 対象者にチェック → 「N member selected ▾」→ Change ro
 ### 卒業生の扱い
 
 - 卒業生は org から外さず、Member のまま残す（作品の履歴に名前が残り、困ったときに相談もできるため）。
-- 卒業する Owner は、後任を Owner にしてから Member に下げる（1 章のルール）。
+- 卒業する Owner は後任を Owner にしてから Member に下げる（1 章のルール）。
 
 ---
 
@@ -90,12 +90,17 @@ gamejam-<西暦>-<spring|summer|autumn|winter>-<チーム記号>
 
 ## 4. 外部アカウント
 
-| サービス | 用途 | 名義 | 備考 |
-|---|---|---|---|
-| unityroom | ゲームの Web 公開 | サークル共用アカウント（[nu-multimedia-lab](https://unityroom.com/users/nu-multimedia-lab)） | Google アカウントでログイン。どの Google アカウントかは記入 |
-| Unity（自動ビルド用） | GitHub Actions でのビルド | （決まったら記入） | org の Secrets に登録。名義人が卒業するときは登録し直す |
+サークルで共用しているアカウント。
 
-- **パスワードはこのファイルに書かない。** 共用アカウントの情報は、Discord の役員向けチャンネル（役員_必読 など）を参照する。
+| サービス | 用途 | アカウント | 備考 |
+|---|---|---|---|
+| Gmail | 各サービスの登録・ログイン用（GitHub org の請求先メールなど） | サークル共用 | アドレスとパスワードは Discord の役員_必読を参照 |
+| unityroom | ゲームの Web 公開 | [nu-multimedia-lab](https://unityroom.com/users/nu-multimedia-lab) | 共用 Gmail の Google アカウントでログイン |
+| X | 告知 | [@ecmultiple](https://x.com/ecmultiple) | 投稿は Discord の #sns で SNS 担当に依頼する |
+| Instagram | 告知 | [@nagasakidaigakuml](https://www.instagram.com/nagasakidaigakuml/) | 同上 |
+| Unity（自動ビルド用） | GitHub Actions でのビルド | 未定 | 自動ビルドを使うリポジトリごとに Owner が Secrets に登録。名義人が卒業するときは登録し直す |
+
+- **パスワードはこのファイルに書かない**（このリポジトリは public）。ログイン情報は Discord の役員向けチャンネル（役員_必読 など）で管理する。
 - GitHub 以外の引き継ぎ（サーバー管理・イベント・部活動継続願など）は、Discord の「引き継ぎ資料メモ」にまとまっている。
 - 個人のクレジットカードで有料サービスを契約しない。卒業と同時に止まる原因になる。
 
@@ -103,10 +108,11 @@ gamejam-<西暦>-<spring|summer|autumn|winter>-<チーム記号>
 
 ## 5. 現在の状態メモ（2026-11 時点）
 
-- メンバー 37 人、リポジトリ 17 個（うち public は muse_port のみ）
+- メンバー 37 人、リポジトリ 19 個（うち public は `.github` と muse_port）
 - `github_test` / `github-test-2025` / `github_branch` は Archive 済み
+- ゲーム用テンプレート `unity-game-template` を作成済み
 - muse_port（作品投稿サイト）：開発停止中。扱いは保留。
-  - 構成：Next.js + FastAPI。Vercel と AWS Lambda で動いている
+  - 構成：Next.js + FastAPI。Vercel と AWS Lambda にデプロイしていた（今も動いているかは未確認）
   - 再開しない場合は、先に Vercel と AWS を止めてから Archive する（課金や名義が残らないように）
 
 ---
