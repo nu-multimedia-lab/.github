@@ -1,7 +1,8 @@
 <!--
-  ゲームリポジトリ用 README テンプレート
-  このファイルをコピーして、リポジトリ直下の README.md として使ってください。
-  （ ）の部分を書き換え、不要な項目は消してOK。
+  このリポジトリは unity-game-template から作られています。
+  - Unity プロジェクトは、このリポジトリの直下（Assets/ と ProjectSettings/ がここに来る位置）に作ってください。
+    サブフォルダに作ると .gitignore と自動ビルドが効きません。
+  - この README の（ ）の部分を書き換え、不要な項目は消してOK。
 -->
 
 # （ゲームタイトル）
@@ -13,8 +14,8 @@
 
 ## 遊ぶ
 
-- **ブラウザで遊ぶ**：[unityroom](https://unityroom.com/games/（ゲームID）)
-- **ダウンロード（Windows）**：[Releases](../../releases/latest)
+- ブラウザで遊ぶ：[unityroom](https://unityroom.com/games/（ゲームID）)
+- ダウンロード（Windows）：[Releases](../../releases/latest)
 
 ## 操作方法
 
@@ -71,4 +72,11 @@ git clone https://github.com/nu-multimedia-lab/（リポジトリ名）.git
 
 ### ビルド・公開
 
-[作品の公開手順](https://github.com/nu-multimedia-lab/.github/blob/main/docs/RELEASE_GUIDE.md) を参照。
+`v1.0.0` のようなタグを push すると、GitHub Actions が Windows 版と WebGL 版をビルドし、Releases に zip で添付します。
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+事前に Unity ライセンスの Secrets 登録が必要です。手順と、手動で公開する方法は [作品の公開手順](https://github.com/nu-multimedia-lab/.github/blob/main/docs/RELEASE_GUIDE.md) を参照。

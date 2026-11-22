@@ -28,9 +28,6 @@
 ### 変更方法
 
 People → 対象者にチェック → 「N member selected ▾」→ Change role → Owner / Member
-
-Owner を交代したら、この `.github` リポジトリの `CODEOWNERS` に書いた ID も PR で書き換える（レビュー依頼が卒業生に届き続けるのを防ぐため）。
-
 ---
 
 ## 2. 年間スケジュール
@@ -66,9 +63,11 @@ gamejam-<西暦>-<spring|summer|autumn|winter>-<チーム記号>
 
 ### 作るときに必ずやること
 
-1. Description（リポジトリの説明文）を書く
-2. `README.md` を [テンプレート](../templates/GAME_README.md) から作る
-3. Unity 用の `.gitignore` と `.gitattributes`（Git LFS）を入れる
+1. [unity-game-template](https://github.com/nu-multimedia-lab/unity-game-template) を開き、「Use this template」→「Create a new repository」で作る（Owner は nu-multimedia-lab、visibility は Private）
+2. Description（リポジトリの説明文）を書く
+3. README の（ ）の部分を書き換える
+
+テンプレートには、Unity 用の `.gitignore` と `.gitattributes`（Git LFS）、README の雛形、自動リリースの workflow が入っている。テンプレートを使わずに作った場合は、これらを自分で入れる。
 
 ### 公開（public）・非公開（private）
 
@@ -80,7 +79,6 @@ gamejam-<西暦>-<spring|summer|autumn|winter>-<チーム記号>
 
 - main ブランチには直接 push できない。作品の追加もドキュメントの修正も PR で出す。
 - 承認は不要で、出した本人がマージしてよい。PR にすることで、誰がいつ何を変えたかの履歴が残る。
-- PR を出すと、`CODEOWNERS` に書いた Owner にレビュー依頼が自動で届く。
 - PR の出し方は [RELEASE_GUIDE の 4 章](RELEASE_GUIDE.md#4-公開したら) を参照。
 
 ### Archive（読み取り専用化）
@@ -97,6 +95,7 @@ gamejam-<西暦>-<spring|summer|autumn|winter>-<チーム記号>
 |---|---|---|---|
 | unityroom | ゲームの Web 公開 | （サークル共用アカウント or 各自） | 決まったら記入 |
 | （共用 Gmail） | 各サービスの登録用 | サークル | 作成したら記入 |
+| Unity（自動ビルド用） | GitHub Actions でのビルド | （決まったら記入） | org の Secrets に登録。名義人が卒業するときは登録し直す |
 
 - **パスワードはこのファイルに書かない。** 共有パスワードマネージャー（Bitwarden の組織機能など）で管理し、部長・副部長に引き継ぐ。
 - 個人のクレジットカードで有料サービスを契約しない。卒業と同時に止まる原因になる。
