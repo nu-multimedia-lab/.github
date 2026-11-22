@@ -3,6 +3,11 @@
 長崎大学のゲーム制作サークルです。Unity を中心に、ゲームジャム形式でチーム制作をしています。
 イラスト・3D モデリング・DTM など、ゲーム以外の創作をしているメンバーもいます。
 
+## SNS
+
+- Instagram：[@nagasakidaigakuml](https://www.instagram.com/nagasakidaigakuml/)
+- X：[@ecmultiple](https://x.com/ecmultiple)
+
 ## 遊べる作品
 
 <!-- 公開した作品をここに追加してください。新しいものを上に。 -->
