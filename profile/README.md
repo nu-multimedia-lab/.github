@@ -11,19 +11,28 @@
 
 ## 遊べる作品
 
-<!-- 公開した作品をここに追加してください。新しいものを上に。 -->
+準備中です。公開した作品から順に載せていきます。
+
+<!--
+  作品を載せるときは、上の「準備中です。」の行を消して、次の表を使う（新しいものを上に）。
+  載せる前に、制作メンバー全員の同意を取ること（docs/RELEASE_GUIDE.md の 0 章）。
 
 | 作品 | 制作 | 遊ぶ | ダウンロード |
 |---|---|---|---|
-| （作品名） | 2026 夏ゲームジャム A チーム | [unityroom](https://unityroom.com/) | [Releases](https://github.com/nu-multimedia-lab/) |
+| 作品名 | 2026 夏ゲームジャム A チーム | [unityroom](https://unityroom.com/games/ゲームID) | [Releases](https://github.com/nu-multimedia-lab/リポジトリ名/releases/latest) |
+-->
+
+<!--
+  イラスト・DTM・3D などを載せるときは、次の節を有効にする。
 
 ## ゲーム以外の作品
 
-<!-- イラスト・DTM・3D などはそれぞれの外部サービスへのリンクを置く -->
+- イラスト：pixiv / X のリンク
+- 音楽：SoundCloud / YouTube のリンク
+- 3D：Sketchfab のリンク
+-->
 
-- イラスト：（pixiv / X のリンク）
-- 音楽：（SoundCloud / YouTube のリンク）
-- 3D：（Sketchfab のリンク）
+
 
 ## 活動
 
