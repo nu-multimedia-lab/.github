@@ -25,9 +25,10 @@
 - 卒業する Owner は **後任を Owner にしてから** 自分を Member に下げる（順番を逆にしない）。
 - それ以外のメンバーは Member でよい。Owner はリポジトリやメンバーを削除できるので、増やしすぎない。
 
-### 変更方法
+### 操作方法
 
-People → 対象者にチェック → 「N member selected ▾」→ Change role → Owner / Member
+- メンバーを招待する：People →「Invite member」→ GitHub の ID かメールアドレスを入れ、Role を Member にして招待する
+- Owner と Member を切り替える：People → 対象者にチェック → 「N member selected ▾」→ Change role → Owner / Member
 
 ---
 

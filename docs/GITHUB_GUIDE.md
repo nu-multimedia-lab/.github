@@ -5,7 +5,7 @@
 
 画面のスクリーンショット付きの手順は、元部長の記事
 [【Unity】SourceTree/VSCodeを用いた複数人開発の方法【GitHub】（ガデログ）](https://gadelog.com/%E3%80%90unity%E3%80%91%E8%A4%87%E6%95%B0%E4%BA%BA%E9%96%8B%E7%99%BA%E3%81%AE%E6%96%B9%E6%B3%95%E3%80%90github%E3%80%91/)も参考になります。
-このガイドとの違いは、サークルではテンプレートからリポジトリを作る点です（3 章）。
+記事の手順と違うのは、サークルではテンプレートからリポジトリを作る点です（3 章）。
 
 ---
 
@@ -22,7 +22,7 @@
 | ツール | 用途 | 入れるときの注意 |
 |---|---|---|
 | [Git](https://git-scm.com/) | 変更履歴を管理する | インストールの途中で、デフォルトのエディタを VSCode に、デフォルトのブランチ名を `main` にする |
-| Git LFS | 画像や音声などの大きいファイルを扱う | Windows の Git には同梱されている。インストール後に一度だけ、ターミナルで `git lfs install` を実行する |
+| Git LFS | 画像や音声などの大きいファイルを扱う | Windows の Git には同梱されている。Mac は Homebrew で `brew install git-lfs` を実行して入れる。どちらも、入れたあとに一度だけターミナルで `git lfs install` を実行する |
 | [Visual Studio Code](https://code.visualstudio.com/) | コードを書く・Git を操作する | 拡張機能「Unity」と「Japanese Language Pack」を入れる |
 | Unity Hub と Unity | ゲームを作る | Unity のバージョンはチーム全員でそろえる（3 章） |
 
