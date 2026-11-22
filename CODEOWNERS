@@ -1,3 +1,3 @@
-# このリポジトリの変更は、ここに書いた Owner のうち 1 人の承認でマージできる。
+# PR を出すと、ここに書いた Owner にレビュー依頼が自動で届く（承認は必須ではない）。
 # Owner が交代したら、このファイルも更新する（docs/HANDOVER.md 参照）。
 * @Garden-Tree @suekkonosuzuki @teeeeeeen
