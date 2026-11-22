@@ -130,5 +130,17 @@ gh release create v1.0.0 MyGame_v1.0.0_Windows.zip \
 
 1. ゲームリポジトリの README に unityroom と Releases のリンクを追記
 2. リポジトリの About（右上の歯車アイコン）の Website 欄に unityroom の URL を入れる
-3. org トップページ（[`profile/README.md`](../profile/README.md)）の作品一覧に 1 行追加
+3. org トップページ（[`profile/README.md`](../profile/README.md)）の作品一覧に 1 行追加する PR を出す（手順は下記）
 4. Discord で報告する
+
+### org トップページに作品を追加する PR の出し方
+
+main には直接書き込めないので、PR で出します。ブラウザだけでできます。
+
+1. [`profile/README.md`](../profile/README.md) を開き、右上の鉛筆アイコン（Edit this file）を押す
+2. 「遊べる作品」の表の、コメント行のすぐ下に 1 行追加する（新しい作品を上に）
+3. 「Commit changes...」を押し、「Create a new branch for this commit and start a pull request」を選んで「Propose changes」を押す
+4. PR の画面で「Create pull request」を押す
+5. Owner の誰かが承認したら「Merge pull request」でマージする
+
+Owner がレビューに自動で指定されるので、Discord でも一声かけると早く進みます。

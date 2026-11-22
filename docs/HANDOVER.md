@@ -29,6 +29,8 @@
 
 People → 対象者にチェック → 「N member selected ▾」→ Change role → Owner / Member
 
+Owner を交代したら、この `.github` リポジトリの `CODEOWNERS` に書いた ID も PR で書き換える（承認者がいなくなるのを防ぐため）。
+
 ---
 
 ## 2. 年間スケジュール
@@ -73,6 +75,12 @@ gamejam-<西暦>-<spring|summer|autumn|winter>-<チーム記号>
 - デフォルトは private。
 - public にするのは、[RELEASE_GUIDE の公開前チェック](RELEASE_GUIDE.md#0-公開前チェック必須) を満たしたときだけ。
 - 特に **Asset Store の有料アセットを含むリポジトリは public にしない**（規約違反になる可能性が高い）。
+
+### この .github リポジトリの更新
+
+- main ブランチには直接 push できない。作品の追加もドキュメントの修正も PR で出す。
+- マージには、`CODEOWNERS` に書いた Owner のうち 1 人の承認が要る。
+- PR の出し方は [RELEASE_GUIDE の 4 章](RELEASE_GUIDE.md#4-公開したら) を参照。
 
 ### Archive（読み取り専用化）
 
