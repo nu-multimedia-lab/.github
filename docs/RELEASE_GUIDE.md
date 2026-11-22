@@ -44,7 +44,36 @@ v1.1.0   … 機能追加
 
 ## 2. GitHub Releases に Windows 版を置く
 
-### 2-1. ビルド
+### 2-0. 自動ビルドを使う場合
+
+[unity-game-template](https://github.com/nu-multimedia-lab/unity-game-template) から作ったリポジトリでは、タグを push するだけで Windows 版と WebGL 版がビルドされ、Releases に zip で添付されます。2-1〜2-3 の手作業は要りません。
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+進み具合はリポジトリの「Actions」タブで見られます。終わると Releases に `リポジトリ名_v1.0.0_StandaloneWindows64.zip` と `…_WebGL.zip` が並びます。WebGL の zip は展開して unityroom にアップロードします（3 章）。
+
+#### 最初に一度だけ：Unity ライセンスの登録（Owner の作業）
+
+自動ビルドには Unity のライセンスが要ります。org の Secrets に一度登録すれば、全リポジトリで使えます。
+
+1. 名義にする人が Unity Hub にログインし、Preferences → Licenses →「Add」→「Get a free personal license」でライセンスを追加する
+2. ライセンスファイル `Unity_lic.ulf` を探す（隠しフォルダにある）
+   - Windows：`C:\ProgramData\Unity\Unity_lic.ulf`
+   - Mac：`/Library/Application Support/Unity/Unity_lic.ulf`
+3. org の Settings → Secrets and variables → Actions →「New organization secret」で次の 3 つを登録する（Repository access は All repositories か Private repositories）
+   - `UNITY_LICENSE`：`.ulf` ファイルの中身をそのまま貼る
+   - `UNITY_EMAIL`：その Unity アカウントのメールアドレス
+   - `UNITY_PASSWORD`：その Unity アカウントのパスワード
+4. 登録したら Unity Hub からサインアウトする
+
+名義人を [引き継ぎ書](HANDOVER.md#4-外部アカウント) に書いておき、卒業するときは後任の名義で登録し直します。
+
+private リポジトリの Actions には、org 全体で月ごとの無料時間の上限があります。Unity のビルドは 1 回で数十分かかることがあるので、タグを打つのはリリースするときだけにします。
+
+### 2-1. ビルド（手動の場合）
 
 1. Unity で「File → Build Profiles」（古い Unity では Build Settings）を開く
 2. Platform を「Windows」にする
