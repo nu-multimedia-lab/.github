@@ -66,6 +66,8 @@ gamejam-<西暦>-<spring|summer|autumn|winter>-<チーム記号>
 2. Description（リポジトリの説明文）を書く
 3. README の（ ）の部分を書き換える
 
+詳しい手順と、チームでの開発の進め方は [GitHub の使い方](GITHUB_GUIDE.md) を参照。
+
 テンプレートには、Unity 用の `.gitignore` と `.gitattributes`（Git LFS）、README の雛形、自動リリースの workflow が入っている。テンプレートを使わずに作った場合は、これらを自分で入れる。
 
 ### 公開（public）・非公開（private）
