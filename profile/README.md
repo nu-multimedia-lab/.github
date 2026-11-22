@@ -7,6 +7,7 @@
 
 - Instagram：[@nagasakidaigakuml](https://www.instagram.com/nagasakidaigakuml/)
 - X：[@ecmultiple](https://x.com/ecmultiple)
+- unityroom：[長崎大学マルチメディア研究会](https://unityroom.com/users/nu-multimedia-lab)（ブラウザで遊べる作品）
 
 ## 遊べる作品
 
