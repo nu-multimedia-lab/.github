@@ -79,4 +79,4 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-事前に Unity ライセンスの Secrets 登録が必要です。手順と、手動で公開する方法は [作品の公開手順](https://github.com/nu-multimedia-lab/.github/blob/main/docs/RELEASE_GUIDE.md) を参照。
+事前に、このリポジトリへの Unity ライセンスの Secrets 登録が必要です（Owner に頼む）。手順と、手動で公開する方法は [作品の公開手順](https://github.com/nu-multimedia-lab/.github/blob/main/docs/RELEASE_GUIDE.md) を参照。
