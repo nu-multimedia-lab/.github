@@ -9,5 +9,7 @@
 | [`docs/RELEASE_GUIDE.md`](docs/RELEASE_GUIDE.md) | 作品を Releases / unityroom で公開する手順 | 作品を公開したい人 |
 | [`templates/GAME_README.md`](templates/GAME_README.md) | ゲームリポジトリ用 README の雛形 | 新しくゲームを作る人 |
 
+変更はすべて PR で出してください（main への直接 push はできません）。マージには Owner 1 人の承認が要ります。
+
 > このリポジトリは public です（org プロフィールを表示するため）。
 > パスワード・API キー・個人の連絡先などは **絶対に書かないでください**。
