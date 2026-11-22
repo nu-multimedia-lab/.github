@@ -141,6 +141,4 @@ main には直接書き込めないので、PR で出します。ブラウザだ
 2. 「遊べる作品」の表の、コメント行のすぐ下に 1 行追加する（新しい作品を上に）
 3. 「Commit changes...」を押し、「Create a new branch for this commit and start a pull request」を選んで「Propose changes」を押す
 4. PR の画面で「Create pull request」を押す
-5. Owner の誰かが承認したら「Merge pull request」でマージする
-
-Owner がレビューに自動で指定されるので、Discord でも一声かけると早く進みます。
+5. 「Merge pull request」を押してマージする（承認は不要。自分でマージしてよい）

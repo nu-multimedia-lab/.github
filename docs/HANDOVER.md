@@ -29,7 +29,7 @@
 
 People → 対象者にチェック → 「N member selected ▾」→ Change role → Owner / Member
 
-Owner を交代したら、この `.github` リポジトリの `CODEOWNERS` に書いた ID も PR で書き換える（承認者がいなくなるのを防ぐため）。
+Owner を交代したら、この `.github` リポジトリの `CODEOWNERS` に書いた ID も PR で書き換える（レビュー依頼が卒業生に届き続けるのを防ぐため）。
 
 ---
 
@@ -79,7 +79,8 @@ gamejam-<西暦>-<spring|summer|autumn|winter>-<チーム記号>
 ### この .github リポジトリの更新
 
 - main ブランチには直接 push できない。作品の追加もドキュメントの修正も PR で出す。
-- マージには、`CODEOWNERS` に書いた Owner のうち 1 人の承認が要る。
+- 承認は不要で、出した本人がマージしてよい。PR にすることで、誰がいつ何を変えたかの履歴が残る。
+- PR を出すと、`CODEOWNERS` に書いた Owner にレビュー依頼が自動で届く。
 - PR の出し方は [RELEASE_GUIDE の 4 章](RELEASE_GUIDE.md#4-公開したら) を参照。
 
 ### Archive（読み取り専用化）
